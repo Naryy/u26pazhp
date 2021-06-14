@@ -23,6 +23,8 @@
 
 /*コンテンツ全般*/
 .content_wrap{
+    width: 100%;
+    margin: 0 auto;
     /*メインビジュアル*/
     .main_visual{
         .logo_img{
@@ -32,4 +34,20 @@
         }
     }
     /*大会結果*/
+    .kekka_wrap{
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .kekka_2{
+            width: 300px;
+        }
+        .kekka_1{
+            width: 300px;
+        }
+        .kekka_3{
+            width: 300px;
+        }
+    }
 }

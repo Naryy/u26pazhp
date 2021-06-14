@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/*ヘッダー / グローバルナビゲーション*/
+.header {
+  width: 100%;
+  padding: 30px 4% 10px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header ul {
+  list-style: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header li {
+  margin: 0 0 0 15px;
+  font-size: 16px;
+}
+
+.header nav {
+  margin: 0 auto;
+}
+
+/*コンテンツ全般*/
+.content_wrap {
+  width: 100%;
+  margin: 0 auto;
+  /*メインビジュアル*/
+  /*大会結果*/
+}
+
+.content_wrap .main_visual .logo_img {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.content_wrap .kekka_wrap {
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content_wrap .kekka_wrap .kekka_2 {
+  width: 300px;
+}
+
+.content_wrap .kekka_wrap .kekka_1 {
+  width: 300px;
+}
+
+.content_wrap .kekka_wrap .kekka_3 {
+  width: 300px;
+}
+/*# sourceMappingURL=style.css.map */
