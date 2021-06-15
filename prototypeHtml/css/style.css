@@ -33,13 +33,142 @@
 
 /*コンテンツ全般*/
 .content_wrap {
+  width: 90%;
+  margin: 0 auto;
   /*メインビジュアル*/
   /*大会結果*/
+  /*ダイジェスト*/
+  /*大会当日の様子*/
+  /*ゲスト*/
+  /*概要*/
 }
 
 .content_wrap .main_visual .logo_img {
   margin-top: 50px;
   width: 100%;
   height: auto;
+}
+
+.content_wrap .kekka_wrap {
+  width: 100%;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+
+.content_wrap .kekka_wrap h1 {
+  text-align: center;
+}
+
+.content_wrap .kekka_wrap .kekka_1 {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.content_wrap .kekka_wrap .kekka_2, .content_wrap .kekka_wrap .kekka_3 {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.content_wrap .kekka_wrap .rank {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.content_wrap .kekka_wrap .kekkaimg_1 {
+  width: 300px;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.content_wrap .kekka_wrap .kekkaimg {
+  width: 150px;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.content_wrap .kekka_wrap .kekka_name {
+  text-align: center;
+}
+
+.content_wrap .digestmovie {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.content_wrap .digestmovie h1 {
+  text-align: center;
+}
+
+.content_wrap .taikaipicture {
+  margin: 0 auto;
+  padding-bottom: 100px;
+  width: 45em;
+}
+
+.content_wrap .taikaipicture h1 {
+  text-align: center;
+}
+
+.content_wrap .taikaipicture .touzitu_pic {
+  width: 45em;
+  height: auto;
+  margin: 0 auto;
+}
+
+.content_wrap .guest_wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.content_wrap .guest_wrap .guest_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: wrap;
+          flex-direction: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content_wrap .guest_wrap h1 {
+  text-align: center;
+}
+
+.content_wrap .guest_wrap .guest1, .content_wrap .guest_wrap .guest2, .content_wrap .guest_wrap .guest3 {
+  width: 300px;
+}
+
+.content_wrap .guest_wrap img {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.content_wrap .guest_wrap .guest_name {
+  text-align: center;
+}
+
+.content_wrap .gaiyou {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.content_wrap .gaiyou h1 {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

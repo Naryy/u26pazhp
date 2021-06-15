@@ -23,7 +23,7 @@
 
 /*コンテンツ全般*/
 .content_wrap{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     /*メインビジュアル*/
     .main_visual{
@@ -35,19 +35,96 @@
     }
     /*大会結果*/
     .kekka_wrap{
-        width: 70%;
+        width: 100%;
+        padding-bottom: 100px;
         margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .kekka_2{
-            width: 300px;
+        h1{
+            text-align: center;
         }
         .kekka_1{
             width: 300px;
+            margin: 0 auto;
         }
-        .kekka_3{
+        .kekka_2, .kekka_3{
+            width: 150px;
+            margin: 0 auto;
+        }
+        .rank{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .kekkaimg_1{
             width: 300px;
+            height: auto;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .kekkaimg{
+            width: 150px;
+            height: auto;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .kekka_name{
+            text-align: center;
+        }
+    }
+    /*ダイジェスト*/
+    .digestmovie{
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        h1{
+            text-align: center;
+        }
+    }
+    /*大会当日の様子*/
+    .taikaipicture{
+        margin: 0 auto;
+        padding-bottom: 100px;
+        width: 45em;
+        h1{
+            text-align: center;
+        }
+        .touzitu_pic{
+            width: 45em;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+    /*ゲスト*/
+    .guest_wrap{
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        .guest_flex{
+            display: flex;
+            justify-content: center;
+            flex-direction: wrap;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+        }
+        .guest1, .guest2, .guest3{
+            width: 300px;
+        }
+        img{
+            width: 300px;
+            height: auto;
+            margin: 0 auto;
+        }
+        .guest_name{
+            text-align: center;
+        }
+    }
+    /*概要*/
+    .gaiyou{
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        h1{
+            text-align: center;
         }
     }
 }
