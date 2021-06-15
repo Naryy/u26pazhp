@@ -179,7 +179,7 @@ $h3fontsize: 18px;
             width: 200px;
         }
     }
-    /*tablet*/
+    /*tablet
     @media (max-width: 768px) {
         .guest_wrap{
             .guest1, .guest2, .guest3{
@@ -189,9 +189,10 @@ $h3fontsize: 18px;
                 width: 150px;
             }
         }
-    }
+    }*/
     /*smartphone*/
-    @media (max-width: 375px) {
+    /*375*/
+    @media (max-width: 768px) {
         /*メインビジュアル*/
         .main_visual{
             .logo_img{

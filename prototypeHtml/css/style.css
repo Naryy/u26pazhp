@@ -42,8 +42,19 @@
   /*大会当日の様子*/
   /*ゲスト*/
   /*概要*/
-  /*tablet*/
+  /*tablet
+    @media (max-width: 768px) {
+        .guest_wrap{
+            .guest1, .guest2, .guest3{
+                width: 150px;
+            }
+            img{
+                width: 150px;
+            }
+        }
+    }*/
   /*smartphone*/
+  /*375*/
 }
 
 .content_wrap .main_visual .logo_img {
@@ -241,15 +252,6 @@
 }
 
 @media (max-width: 768px) {
-  .content_wrap .guest_wrap .guest1, .content_wrap .guest_wrap .guest2, .content_wrap .guest_wrap .guest3 {
-    width: 150px;
-  }
-  .content_wrap .guest_wrap img {
-    width: 150px;
-  }
-}
-
-@media (max-width: 375px) {
   .content_wrap {
     /*メインビジュアル*/
     /*大会当日の様子*/
