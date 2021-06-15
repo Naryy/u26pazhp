@@ -1,3 +1,6 @@
+$h1fontsize: 26px;
+$h2fontsize: 22px;
+$h3fontsize: 18px;
 /*ヘッダー / グローバルナビゲーション*/
 .header{
     width: 100%;
@@ -7,6 +10,7 @@
     top: 0;
     display: flex;
     align-items: center;
+    z-index: 99;
     ul{
         list-style: none;
         margin: 0;
@@ -40,6 +44,7 @@
         margin: 0 auto;
         h1{
             text-align: center;
+            font-size: $h1fontsize;
         }
         .kekka_1{
             width: 300px;
@@ -49,9 +54,13 @@
             width: 150px;
             margin: 0 auto;
         }
-        .rank{
+        .rank, .rank1{
             margin-top: 20px;
             text-align: center;
+            font-size: $h2fontsize;
+        }
+        .rank1{
+            font-size: 24px;
         }
         .kekkaimg_1{
             width: 300px;
@@ -76,6 +85,20 @@
         padding-bottom: 100px;
         h1{
             text-align: center;
+            font-size: $h1fontsize;
+        }
+        .digestyoutube_wrap{
+            margin: 0 auto;
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            iframe {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+            }
         }
     }
     /*大会当日の様子*/
@@ -85,6 +108,7 @@
         width: 45em;
         h1{
             text-align: center;
+            font-size: $h1fontsize;
         }
         .touzitu_pic{
             width: 45em;
@@ -105,6 +129,11 @@
         }
         h1{
             text-align: center;
+            font-size: $h1fontsize;
+        }
+        h2{
+            text-align: center;
+            font-size: $h2fontsize;
         }
         .guest1, .guest2, .guest3{
             width: 300px;
@@ -119,12 +148,105 @@
         }
     }
     /*概要*/
-    .gaiyou{
+    .gaiyou_wrap{
+        h1{
+            text-align: center;
+            font-size: $h1fontsize;
+        }
+        h2{
+            text-align: center;
+            font-size: $h2fontsize;
+        }
+        h3{
+            text-align: center;
+            $h3fontsize: 18px;
+        }
         width: 100%;
         margin: 0 auto;
         padding-bottom: 100px;
-        h1{
-            text-align: center;
+        .gaiyou{
+            width: 400px;
+            margin: 0 auto;
+        }
+        .keihin_flex{
+            display: flex;
+            justify-content: center;
+            flex-direction: wrap;
+            align-items: center;
+            font-size: 16px;
+        }
+        .keihin_img{
+            width: 200px;
+        }
+    }
+    /*tablet*/
+    @media (max-width: 768px) {
+        .guest_wrap{
+            .guest1, .guest2, .guest3{
+                width: 150px;
+            }
+            img{
+                width: 150px;
+            }
+        }
+    }
+    /*smartphone*/
+    @media (max-width: 375px) {
+        /*メインビジュアル*/
+        .main_visual{
+            .logo_img{
+                margin-top: 100px;
+                width: 300px;
+                height: auto;
+            }
+        }
+        /*大会当日の様子*/
+        .taikaipicture{
+            margin: 0 auto;
+            padding-bottom: 100px;
+            width: 350px;
+            h1{
+                text-align: center;
+                font-size: $h1fontsize;
+            }
+            .touzitu_pic{
+                width: 300px;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+        /*ゲスト*/
+        .guest_wrap{
+            .guest_flex{
+                display: inline;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+                margin: 0 auto;
+            }
+            .guest1, .guest2, .guest3{
+                width: 300px;
+            }
+            img{
+                width: 300px;
+            }
+        }
+        /*概要*/
+        .gaiyou_wrap{
+            width: 300px;
+            .gaiyou{
+                width: 300px;
+            }
+            .keihin_flex{
+                display: flex;
+                justify-content: center;
+                flex-direction: wrap;
+                align-items: center;
+                font-size: 16px;
+            }
+            .keihin_img{
+                width: 150px;
+            }
         }
     }
 }

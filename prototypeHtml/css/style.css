@@ -12,6 +12,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 99;
 }
 
 .header ul {
@@ -41,6 +42,8 @@
   /*大会当日の様子*/
   /*ゲスト*/
   /*概要*/
+  /*tablet*/
+  /*smartphone*/
 }
 
 .content_wrap .main_visual .logo_img {
@@ -57,6 +60,7 @@
 
 .content_wrap .kekka_wrap h1 {
   text-align: center;
+  font-size: 26px;
 }
 
 .content_wrap .kekka_wrap .kekka_1 {
@@ -69,9 +73,14 @@
   margin: 0 auto;
 }
 
-.content_wrap .kekka_wrap .rank {
+.content_wrap .kekka_wrap .rank, .content_wrap .kekka_wrap .rank1 {
   margin-top: 20px;
   text-align: center;
+  font-size: 22px;
+}
+
+.content_wrap .kekka_wrap .rank1 {
+  font-size: 24px;
 }
 
 .content_wrap .kekka_wrap .kekkaimg_1 {
@@ -104,6 +113,22 @@
 
 .content_wrap .digestmovie h1 {
   text-align: center;
+  font-size: 26px;
+}
+
+.content_wrap .digestmovie .digestyoutube_wrap {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.content_wrap .digestmovie .digestyoutube_wrap iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .content_wrap .taikaipicture {
@@ -114,6 +139,7 @@
 
 .content_wrap .taikaipicture h1 {
   text-align: center;
+  font-size: 26px;
 }
 
 .content_wrap .taikaipicture .touzitu_pic {
@@ -146,6 +172,12 @@
 
 .content_wrap .guest_wrap h1 {
   text-align: center;
+  font-size: 26px;
+}
+
+.content_wrap .guest_wrap h2 {
+  text-align: center;
+  font-size: 22px;
 }
 
 .content_wrap .guest_wrap .guest1, .content_wrap .guest_wrap .guest2, .content_wrap .guest_wrap .guest3 {
@@ -162,13 +194,131 @@
   text-align: center;
 }
 
-.content_wrap .gaiyou {
+.content_wrap .gaiyou_wrap {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 100px;
 }
 
-.content_wrap .gaiyou h1 {
+.content_wrap .gaiyou_wrap h1 {
   text-align: center;
+  font-size: 26px;
+}
+
+.content_wrap .gaiyou_wrap h2 {
+  text-align: center;
+  font-size: 22px;
+}
+
+.content_wrap .gaiyou_wrap h3 {
+  text-align: center;
+}
+
+.content_wrap .gaiyou_wrap .gaiyou {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.content_wrap .gaiyou_wrap .keihin_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: wrap;
+          flex-direction: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+
+.content_wrap .gaiyou_wrap .keihin_img {
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  .content_wrap .guest_wrap .guest1, .content_wrap .guest_wrap .guest2, .content_wrap .guest_wrap .guest3 {
+    width: 150px;
+  }
+  .content_wrap .guest_wrap img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 375px) {
+  .content_wrap {
+    /*メインビジュアル*/
+    /*大会当日の様子*/
+    /*ゲスト*/
+    /*概要*/
+  }
+  .content_wrap .main_visual .logo_img {
+    margin-top: 100px;
+    width: 300px;
+    height: auto;
+  }
+  .content_wrap .taikaipicture {
+    margin: 0 auto;
+    padding-bottom: 100px;
+    width: 350px;
+  }
+  .content_wrap .taikaipicture h1 {
+    text-align: center;
+    font-size: 26px;
+  }
+  .content_wrap .taikaipicture .touzitu_pic {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .content_wrap .guest_wrap .guest_flex {
+    display: inline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .content_wrap .guest_wrap .guest1, .content_wrap .guest_wrap .guest2, .content_wrap .guest_wrap .guest3 {
+    width: 300px;
+  }
+  .content_wrap .guest_wrap img {
+    width: 300px;
+  }
+  .content_wrap .gaiyou_wrap {
+    width: 300px;
+  }
+  .content_wrap .gaiyou_wrap .gaiyou {
+    width: 300px;
+  }
+  .content_wrap .gaiyou_wrap .keihin_flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: wrap;
+            flex-direction: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 16px;
+  }
+  .content_wrap .gaiyou_wrap .keihin_img {
+    width: 150px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
