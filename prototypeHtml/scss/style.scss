@@ -1,6 +1,13 @@
 $h1fontsize: 26px;
 $h2fontsize: 22px;
 $h3fontsize: 18px;
+body{
+    background-image: url(../images/backgroundtest.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
 /*ヘッダー / グローバルナビゲーション*/
 .header{
     width: 100%;

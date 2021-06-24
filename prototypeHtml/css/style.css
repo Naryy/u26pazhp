@@ -1,9 +1,19 @@
 @charset "UTF-8";
+body {
+  background-image: url(../images/backgroundtest.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: #fbfbfb;
+}
+
 /*ヘッダー / グローバルナビゲーション*/
 .header {
   width: 100%;
   padding: 30px 4% 10px;
-  background-color: #fff;
+  /*background-color: #fff;*/
+  color: #fbfbfb;
   position: fixed;
   top: 0;
   display: -webkit-box;
