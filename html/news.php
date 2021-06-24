@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
     <link rel="stylesheet" href="./css/destyle.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/cmstyle.css">
     <title>Aeon Financial Service U26 パズドラカップ</title>
 </head>
 <body>
     <div class="header">
         <nav class="nav_pc">
             <ul>
-                <li><a href="./index.html">TOP</a></li>
+            <li><a href="./index.html">TOP</a></li>
                 <li><a href="#">NEWS</a></li>
                 <li><a href="./cm.html">CM</a></li>
                 <li><a href="#">AEON商品</a></li>
@@ -24,19 +23,7 @@
         </nav>
     </div>
     <div class="content_wrap">
-        <div class="CM01">
-            <h2>CM</h2>
-        </div>
-        <div class="movie">
-            <h1 class="catch">イオン銀行</h1>
-            <div class="CM02">
-                <h2>CM動画</h2>
-            </div>
-            <h1 class="catch">イオンクレジット</h1>
-            <div class="CM03">
-                <h2>CM動画</h2>
-            </div>
-        </div>
+
     </div>
     <!---->
     <div class="footer">
