@@ -1,18 +1,21 @@
 $h1fontsize: 26px;
 $h2fontsize: 22px;
 $h3fontsize: 18px;
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 body{
     background-image: url(../images/backgroundtest.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    font-family: 'DotGothic16', sans-serif;
+    color: #fbfbfb;
 }
 /*ヘッダー / グローバルナビゲーション*/
 .header{
     width: 100%;
     padding: 30px 4% 10px;
-    background-color: #fff;
+    /*background-color: #fff;*/
     position: fixed;
     top: 0;
     display: flex;
