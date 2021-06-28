@@ -1,0 +1,20 @@
+.news_wrap{
+    margin-top: 100px;
+    h1{
+        text-align: center;
+    }
+    .news_content{
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: wrap;
+        align-items: center;
+        img{
+            width: 200px;
+        }
+    }
+    .news_left{
+        float: left;
+    }
+}
