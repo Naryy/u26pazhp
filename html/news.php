@@ -1,6 +1,41 @@
 <?php
-    $i = 0;
-    for{}
+    $dsn      = 'mysql:dbname=db_name;host=localhost';
+    $user     = 'user_name';
+    $password = 'password';
+
+    // DBへ接続
+    try{
+        $dbh = new PDO($dsn, $user, $password);
+
+        // クエリの実行
+        $query = "SELECT * FROM TABLE_NAME";
+        $stmt = $dbh->query($query);
+        $sql = "SELECT * FROM users";
+        $sth = $pdo -> query($sql);
+        $count = $sth -> rowCount();
+
+        // 表示処理
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+            echo $row["name"];
+        }
+
+    }catch(PDOException $e){
+        print("データベースの接続に失敗しました".$e->getMessage());
+        die();
+    }
+
+// 接続を閉じる
+$dbh = null;
+
+    // 接続状況をチェックします
+    if (mysqli_connect_errno()) {
+        die("データベースに接続できません:" . mysqli_connect_error() . "\n");
+    } else {
+        echo "データベースの接続に成功しました。\n";
+    }
+    $sql = "SELECT * FROM users";
+    $sth = $pdo -> query($sql);
+    $count = $sth -> rowCount();
 ?>
 <!DOCTYPE html>
 <html lang="ja">
