@@ -1,5 +1,5 @@
 <?php
-    $dsn      = 'mysql:dbname=p;host=localhost';
+    $dsn      = 'mysql:dbname=AEON;host=localhost';
     $user     = 'root';
     $password = 'root';
 
@@ -7,6 +7,16 @@
     try{
         $dbh = new PDO($dsn, $user, $password);
 
+        $sql = "SELECT id FROM CONTENTS WHERE news_category";
+        $sth = $dbh -> query($sql);
+        $row = $sth->fetch(PDO::FETCH_ASSOC);
+        $count = $sth -> rowCount();
+        //echo $count;
+        //echo $sth;
+
+        while($row = $sth->fetch(PDO::FETCH_ASSOC)){
+            print $row['id'];
+        }
         // クエリの実行
         //$query = "SELECT * FROM TABLE_NAME";
         //$stmt = $dbh->query($query);
@@ -24,9 +34,7 @@
     // 接続を閉じる
     $dbh = null;
 
-    $sql = "SELECT * FROM users";
-    $sth = $pdo -> query($sql);
-    $count = $sth -> rowCount();
+
     echo $count;
 ?>
 <!DOCTYPE html>
