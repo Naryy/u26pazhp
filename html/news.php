@@ -1,23 +1,23 @@
 <?php
-    $dsn      = 'mysql:dbname=db_name;host=localhost';
-    $user     = 'user_name';
-    $password = 'password';
+    $dsn      = 'mysql:dbname=p;host=localhost';
+    $user     = 'root';
+    $password = 'root';
 
     // DBへ接続
     try{
         $dbh = new PDO($dsn, $user, $password);
 
         // クエリの実行
-        $query = "SELECT * FROM TABLE_NAME";
-        $stmt = $dbh->query($query);
-        $sql = "SELECT * FROM users";
+        //$query = "SELECT * FROM TABLE_NAME";
+        //$stmt = $dbh->query($query);
+        $sql = "SELECT * FROM contents";
         $sth = $pdo -> query($sql);
         $count = $sth -> rowCount();
 
         // 表示処理
-        while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+        /*while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
             echo $row["name"];
-        }
+        }*/
 
     }catch(PDOException $e){
         print("データベースの接続に失敗しました".$e->getMessage());
