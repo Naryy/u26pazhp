@@ -10,9 +10,6 @@
         // クエリの実行
         //$query = "SELECT * FROM TABLE_NAME";
         //$stmt = $dbh->query($query);
-        $sql = "SELECT * FROM contents";
-        $sth = $pdo -> query($sql);
-        $count = $sth -> rowCount();
 
         // 表示処理
         /*while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
@@ -24,18 +21,13 @@
         die();
     }
 
-// 接続を閉じる
-$dbh = null;
+    // 接続を閉じる
+    $dbh = null;
 
-    // 接続状況をチェックします
-    if (mysqli_connect_errno()) {
-        die("データベースに接続できません:" . mysqli_connect_error() . "\n");
-    } else {
-        echo "データベースの接続に成功しました。\n";
-    }
     $sql = "SELECT * FROM users";
     $sth = $pdo -> query($sql);
     $count = $sth -> rowCount();
+    echo $count;
 ?>
 <!DOCTYPE html>
 <html lang="ja">
