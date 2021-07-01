@@ -7,35 +7,12 @@
     try{
         $dbh = new PDO($dsn, $user, $password);
 
-        $sql = "SELECT id FROM CONTENTS WHERE news_category";
+        $sql = "SELECT title, content, image_path FROM CONTENTS WHERE news_category";
         $sth = $dbh -> query($sql);
-        $row = $sth->fetch(PDO::FETCH_ASSOC);
+        //$row = $sth->fetch(PDO::FETCH_ASSOC);
         $count = $sth -> rowCount();
         //echo $count;
         //echo $sth;
-
-        while($row = $sth->fetch(PDO::FETCH_ASSOC)){
-            print $row['id'];
-        }
-        // クエリの実行
-        //$query = "SELECT * FROM TABLE_NAME";
-        //$stmt = $dbh->query($query);
-
-        // 表示処理
-        /*while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-            echo $row["name"];
-        }*/
-
-    }catch(PDOException $e){
-        print("データベースの接続に失敗しました".$e->getMessage());
-        die();
-    }
-
-    // 接続を閉じる
-    $dbh = null;
-
-
-    echo $count;
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -66,18 +43,34 @@
     <div class="content_wrap">
         <div class="news_wrap">
             <h1>NEWS</h1>
-            <a href="#">
-                <div class="news_content">
-                    <img src="./images/youngman_25.png" alt="icon">
-                    <p>こんなコンテンツですよみたいな文章</p>
-                </div>
-            </a>
-            <a href="#" class="news_left">
-                <div class="news_content">
-                    <img src="./images/youngman_25.png" alt="icon">
-                    <p>こんなコンテンツですよみたいな文章</p>
-                </div>
-            </a>
+        <?php
+                while($row = $sth->fetch(PDO::FETCH_ASSOC)){
+                    $content = $row['content'];
+                    $image_path = $row['image_path'];
+                    $title = $row['title'];
+                    $i = 0;
+                    if($i % 2 == 0){
+                        echo '<a href="#" class="news_content">
+                            <div class="news_content">';
+                    }
+                    else{
+                        echo '<a href="#" class="news_left">
+                        <div class="news_content">';
+                    }
+
+                    echo "<img src='$image_path' alt='icon'>";
+                    echo "<p>$title</p>";
+                    echo '</div>
+                            </a>';
+                    $i ++;
+                }
+            }catch(PDOException $e){
+                print("データベースの接続に失敗しました".$e->getMessage());
+                die();
+            }
+            // 接続を閉じる
+            $dbh = null;
+        ?>
             <a href="#">
                 <div class="news_content">
                     <img src="./images/youngman_25.png" alt="icon">
