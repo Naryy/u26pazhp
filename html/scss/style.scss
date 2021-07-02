@@ -235,12 +235,15 @@ body{
         }
         /*ゲスト*/
         .guest_wrap{
+            width: 100%;
             .guest_flex{
+                width: 300px;
                 display: inline;
                 justify-content: center;
                 flex-direction: row;
                 align-items: center;
                 margin: 0 auto;
+                padding: 0;
             }
             .guest1, .guest2, .guest3{
                 width: 300px;

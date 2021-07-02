@@ -5,7 +5,7 @@ include 'db.php';
 try{
     $dbh = new PDO($dsn, $user, $password);
 
-    $sql = "SELECT title, content, video_url FROM CONTENTS WHERE contents_category = 2 and contents_category is not null";
+    $sql = "SELECT title, content, video_url FROM CONTENTS WHERE contents_category = 2 and contents_category is not null AND process_status = 2";
     $sth = $dbh -> query($sql);
     //$row = $sth->fetch(PDO::FETCH_ASSOC);
     $count = $sth -> rowCount();
@@ -32,7 +32,7 @@ try{
                 <li><a href="./news.php">NEWS</a></li>
                 <li><a href="./cm.php">CM</a></li>
                 <li><a href="./product.php">AEON商品</a></li>
-                <li><a href="https://www.aeonfinancial.co.jp/esportsevent" target="_brank">ランディングページ</a></li>
+                <li><a href="https://afshal.jp/" target="_brank">ランディングページ</a></li>
                 <li><a href="#">Twitter</a></li>
                 <li><a href="#">YouTube</a></li>
         </ul>
@@ -56,11 +56,19 @@ try{
             echo "
                 <div class='CM02'>
                 <h1 class='catch'>$title</h1>
+                <div class='cmyoutube_wrap'>
                     <iframe width='560' height='315' src='$video_url'
-                                title='YouTube video player' frameborder='0'
-                                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                                allowfullscreen>
+                                title='YouTube video player'
+                                frameborder='0'
+                                allow='accelerometer;
+                                autoplay;
+                                clipboard-write;
+                                encrypted-media;
+                                gyroscope;
+                                picture-in-picture'allowfullscreen
+                                class='cmyoutube'>
                     </iframe>
+                </div>
                 <p>$content</p>
                 </div>";
             $i++;
@@ -74,8 +82,5 @@ try{
     </div>
 </div>
 <!---->
-<div class="footer">
-    ©︎footer
-</div>
 </body>
 </html>

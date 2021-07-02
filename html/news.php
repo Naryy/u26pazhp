@@ -32,7 +32,7 @@
                 <li><a href="./news.php">NEWS</a></li>
                 <li><a href="./cm.php">CM</a></li>
                 <li><a href="./product.php">AEON商品</a></li>
-                <li><a href="https://www.aeonfinancial.co.jp/esportsevent" target="_brank">ランディングページ</a></li>
+                <li><a href="https://afshal.jp/" target="_brank">ランディングページ</a></li>
                 <li><a href="#">Twitter</a></li>
                 <li><a href="#">YouTube</a></li>
             </ul>

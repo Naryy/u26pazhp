@@ -5,7 +5,7 @@
     try{
         $dbh = new PDO($dsn, $user, $password);
 
-        $sql = "SELECT title, content, image_path FROM CONTENTS WHERE contents_category = 3";
+        $sql = "SELECT title, content, image_path FROM CONTENTS WHERE contents_category = 3 AND process_status = 2";
         $sth = $dbh -> query($sql);
         //$row = $sth->fetch(PDO::FETCH_ASSOC);
         $count = $sth -> rowCount();
@@ -31,7 +31,7 @@
                 <li><a href="./news.php">NEWS</a></li>
                 <li><a href="./cm.php">CM</a></li>
                 <li><a href="./product.php">AEON商品</a></li>
-                <li><a href="https://www.aeonfinancial.co.jp/esportsevent" target="_brank">ランディングページ</a></li>
+                <li><a href="https://afshal.jp/" target="_brank">ランディングページ</a></li>
                 <li><a href="#">Twitter</a></li>
                 <li><a href="#">YouTube</a></li>
             </ul>
