@@ -1,42 +1,37 @@
-@charset "UTF-8";
-
+.cmtitle {
+  font-size: 32px;
+}
 
 .catch {
-    text-align: center;
-    margin: 75px 50px;
+  text-align: center;
+  font-size: 28px;
 }
 
 .CM01 {
   margin-top: 75px;
-  margin-right:auto;
-  margin-left:auto;
-  text-align:center;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
   line-height: 100px;
-  width:80%;
-  height:100px;
-  color:#fff;
-  background-color:#000
+  width: 80%;
+  height: 100px;
 }
+
 .CM02 {
-    margin-top: 75px;
-    margin-right:auto;
-    margin-left:auto;
-    text-align:center;
-    line-height: 400px;
-    width:80%;
-    height:400px;
-    color:#fff;
-    background-color:#000
+  margin-top: 75px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 80%;
+  height: 400px;
 }
 
 .CM03 {
-    margin-top: 75px;
-    margin-right:auto;
-    margin-left:auto;
-    text-align:center;
-    line-height:400px;
-    width:80%;
-    height:400px;
-    color:#fff;
-    background-color:#000
+  margin-top: 75px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 80%;
+  height: 400px;
 }
+/*# sourceMappingURL=cmstyle.css.map */

@@ -1,7 +1,9 @@
 $h1fontsize: 26px;
 $h2fontsize: 22px;
 $h3fontsize: 18px;
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&family=Noto+Serif+JP:wght@200&family=Sawarabi+Mincho&family=Shippori+Mincho+B1&display=swap');
 body{
     background-color: #121212;
     background-image: url(../images/backgroundtest.jpg);
@@ -9,7 +11,11 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    font-family: 'DotGothic16', sans-serif;
+    //font-family: 'Kosugi','DotGothic16', sans-serif;
+    font-family: 'Kosugi', sans-serif;
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-family: 'Shippori Mincho B1', serif;
     color: #fbfbfb;
 }
 /*ヘッダー / グローバルナビゲーション*/

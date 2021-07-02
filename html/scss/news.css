@@ -1,4 +1,5 @@
 .news_wrap {
+  margin: 0 auto;
   margin-top: 100px;
 }
 
@@ -6,9 +7,20 @@
   text-align: center;
 }
 
+.news_wrap .news_left {
+  margin-left: 150px;
+  width: 900px;
+}
+
+.news_wrap .news_center {
+  width: 800px;
+  margin: 0 auto;
+}
+
 .news_wrap .news_content {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +40,8 @@
   width: 200px;
 }
 
-.news_wrap .news_left {
-  float: left;
+.news_wrap .news_content .news_title {
+  font-size: 24px;
+  margin-bottom: 4px;
 }
 /*# sourceMappingURL=news.css.map */

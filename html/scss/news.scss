@@ -1,11 +1,21 @@
 .news_wrap{
+    margin: 0 auto;
     margin-top: 100px;
     h1{
         text-align: center;
     }
+    .news_left{
+        margin-left: 150px;
+        width: 900px;
+    }
+    .news_center{
+        width: 800px;
+        margin: 0 auto;
+    }
     .news_content{
         width: 100%;
-        margin-top: 50px;
+        margin-top: 25px;
+        margin-bottom: 25px;
         display: flex;
         justify-content: center;
         flex-direction: wrap;
@@ -13,8 +23,9 @@
         img{
             width: 200px;
         }
-    }
-    .news_left{
-        float: left;
+    .news_title{
+        font-size: 24px;
+        margin-bottom: 4px;
+        }
     }
 }

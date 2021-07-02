@@ -1,13 +1,12 @@
 <?php
-    $dsn      = 'mysql:dbname=AEON;host=localhost';
-    $user     = 'root';
-    $password = 'root';
+    include './db.php';
+    $i = 0;
 
     // DBへ接続
     try{
         $dbh = new PDO($dsn, $user, $password);
 
-        $sql = "SELECT title, content, image_path FROM CONTENTS WHERE news_category";
+        $sql = "SELECT title, content, image_path FROM CONTENTS WHERE news_category AND process_status = 2";
         $sth = $dbh -> query($sql);
         //$row = $sth->fetch(PDO::FETCH_ASSOC);
         $count = $sth -> rowCount();
@@ -30,10 +29,9 @@
         <nav class="nav_pc">
             <ul>
                 <li><a href="./index.html">TOP</a></li>
-                <li><a href="./index.html">TOP</a></li>
                 <li><a href="./news.php">NEWS</a></li>
-                <li><a href="./cm.html">CM</a></li>
-                <li><a href="aeonshohin.html">AEON商品</a></li>
+                <li><a href="./cm.php">CM</a></li>
+                <li><a href="./product.php">AEON商品</a></li>
                 <li><a href="https://www.aeonfinancial.co.jp/esportsevent" target="_brank">ランディングページ</a></li>
                 <li><a href="#">Twitter</a></li>
                 <li><a href="#">YouTube</a></li>
@@ -47,22 +45,33 @@
                 while($row = $sth->fetch(PDO::FETCH_ASSOC)){
                     $content = $row['content'];
                     $image_path = $row['image_path'];
+                    if($image_path == ""){
+                        $image_path = "./img/noimages.png";
+                    }
                     $title = $row['title'];
-                    $i = 0;
+                    //中央に表示されるコンテンツ
                     if($i % 2 == 0){
-                        echo '<a href="#" class="news_content">
-                            <div class="news_content">';
-                    }
-                    else{
-                        echo '<a href="#" class="news_left">
+                        echo '<div class="news_center">
                         <div class="news_content">';
+                        //<a href="./cm.html">
                     }
-
-                    echo "<img src='$image_path' alt='icon'>";
-                    echo "<p>$title</p>";
-                    echo '</div>
-                            </a>';
-                    $i ++;
+                    //左側表示されるコンテンツ
+                    else{
+                        echo '<div class="news_left">
+                        <div class="news_content">';
+                        //<a href="#" class="news_left">
+                    }
+                    //コンテンツ内容
+                    echo "<img src='$image_path' alt='icon'>
+                            <div class='title_content'>
+                                <p class='news_title'>$title</p>
+                                <p class='news_content'>$content</p>
+                            </div>
+                            </div>
+                            </div>
+                            </a>
+                        ";
+                    $i++;
                 }
             }catch(PDOException $e){
                 print("データベースの接続に失敗しました".$e->getMessage());
@@ -71,7 +80,7 @@
             // 接続を閉じる
             $dbh = null;
         ?>
-            <a href="#">
+            <!--<a href="#">
                 <div class="news_content">
                     <img src="./images/youngman_25.png" alt="icon">
                     <p>こんなコンテンツですよみたいな文章</p>
@@ -82,7 +91,7 @@
                     <img src="./images/youngman_25.png" alt="icon">
                     <p>こんなコンテンツですよみたいな文章</p>
                 </div>
-            </a>
+            </a>-->
 
         </div>
     </div>

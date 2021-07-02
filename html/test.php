@@ -7,7 +7,7 @@
     try{
         $dbh = new PDO($dsn, $user, $password);
 
-        $sql = "SELECT title, content FROM CONTENTS WHERE news_category";
+        $sql = "SELECT title, content, image_path FROM CONTENTS WHERE news_category";
         $sth = $dbh -> query($sql);
         //$row = $sth->fetch(PDO::FETCH_ASSOC);
         $count = $sth -> rowCount();
@@ -15,8 +15,7 @@
         //echo $sth;
 
         while($row = $sth->fetch(PDO::FETCH_ASSOC)){
-            print $row['title'];
-            print $row['content'];
+            print $row['image_path'];
         }
         // クエリの実行
         //$query = "SELECT * FROM TABLE_NAME";
