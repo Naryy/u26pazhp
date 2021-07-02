@@ -1,5 +1,5 @@
 <?php
-$dsn      = 'mysql:dbname=AEON;host=localhost';
-$user     = 'root';
-$password = 'root';
+$dsn      = 'mysql:dbname=DBNAME;host=ADDRESS';
+$user     = 'USERID';
+$password = 'PASSWORD';
 ?>
