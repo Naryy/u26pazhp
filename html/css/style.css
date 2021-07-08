@@ -47,6 +47,11 @@ body {
   margin: 0 auto;
 }
 
+.navimg {
+  width: 30px;
+  height: auto;
+}
+
 /*コンテンツ全般*/
 .content_wrap {
   width: 90%;
@@ -292,7 +297,11 @@ body {
     height: auto;
     margin: 0 auto;
   }
+  .content_wrap .guest_wrap {
+    width: 100%;
+  }
   .content_wrap .guest_wrap .guest_flex {
+    width: 300px;
     display: inline;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -305,6 +314,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin: 0 auto;
+    padding: 0;
   }
   .content_wrap .guest_wrap .guest1, .content_wrap .guest_wrap .guest2, .content_wrap .guest_wrap .guest3 {
     width: 300px;

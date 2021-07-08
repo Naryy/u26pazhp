@@ -41,7 +41,10 @@ body{
         margin: 0 auto;
     }
 }
-
+    .navimg{
+        width: 30px;
+        height: auto;
+    }
 /*コンテンツ全般*/
 .content_wrap{
     width: 90%;
@@ -216,6 +219,7 @@ body{
                 margin-top: 100px;
                 width: 300px;
                 height: auto;
+                margin: 0 auto;
             }
         }
         /*大会当日の様子*/
