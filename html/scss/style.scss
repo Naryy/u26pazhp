@@ -6,17 +6,19 @@ $h3fontsize: 18px;
 @import url('https://fonts.googleapis.com/css2?family=Kosugi&family=Noto+Serif+JP:wght@200&family=Sawarabi+Mincho&family=Shippori+Mincho+B1&display=swap');
 body{
     background-color: #121212;
-    background-image: url(../images/backgroundtest.jpg);
+    background-image: url(../images/background-pc.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     //font-family: 'Kosugi','DotGothic16', sans-serif;
-    font-family: 'Kosugi', sans-serif;
-    font-family: 'Noto Serif JP', serif;
+    //font-family: 'Kosugi', sans-serif;
+    //font-family: 'Noto Serif JP', serif;
     font-family: 'Sawarabi Mincho', sans-serif;
-    font-family: 'Shippori Mincho B1', serif;
+    //font-family: 'Shippori Mincho B1', serif;
     color: #fbfbfb;
+    font-weight: bolder;
+    text-shadow: 0px 0px 10px #121212;
 }
 /*ヘッダー / グローバルナビゲーション*/
 .header{
@@ -35,7 +37,7 @@ body{
     }
     li{
         margin: 0 0 0 15px;
-        font-size: 16px;
+        font-size: 18px;
     }
     nav{
         margin: 0 auto;
@@ -146,6 +148,7 @@ body{
             justify-content: center;
             flex-direction: wrap;
             align-items: center;
+            width: 100%;
         }
         h1{
             text-align: center;
@@ -199,6 +202,11 @@ body{
             width: 200px;
         }
     }
+    .lp_wrap{
+        width: 250px;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
     /*tablet
     @media (max-width: 768px) {
         .guest_wrap{
@@ -212,12 +220,28 @@ body{
     }*/
     /*smartphone*/
     /*375*/
-    @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+    body{
+        background-image: url(../images/background-mobile.jpg);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+    }
+    .header{
+        li{
+            margin: 0 0 0 10px;
+            font-size: 16px;
+        }
+    }
+    .content_wrap{
         /*メインビジュアル*/
         .main_visual{
+            margin-top: 100px;
             .logo_img{
-                margin-top: 100px;
-                width: 300px;
+                margin-top: 200px;
+                width: 100%;
                 height: auto;
                 margin: 0 auto;
             }
@@ -232,7 +256,7 @@ body{
                 font-size: $h1fontsize;
             }
             .touzitu_pic{
-                width: 300px;
+                width: 100%;
                 height: auto;
                 margin: 0 auto;
             }
@@ -251,9 +275,92 @@ body{
             }
             .guest1, .guest2, .guest3{
                 width: 300px;
+                margin: 0 auto;
             }
             img{
                 width: 300px;
+                margin: 0 auto;
+            }
+        }
+        /*概要*/
+        .gaiyou_wrap{
+            width: 300px;
+            .gaiyou{
+                width: 300px;
+            }
+            .keihin_flex{
+                display: flex;
+                justify-content: center;
+                flex-direction: wrap;
+                align-items: center;
+                font-size: 16px;
+            }
+            .keihin_img{
+                width: 150px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    body{
+        background-image: url(../images/background-mobile.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    .header{
+        li{
+            margin: 0 0 0 10px;
+            font-size: 15px;
+        }
+    }
+    .content_wrap{
+        /*メインビジュアル*/
+        .main_visual{
+            margin-top: 100px;
+            .logo_img{
+                margin-top: 200px;
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+        /*大会当日の様子*/
+        .taikaipicture{
+            margin: 0 auto;
+            padding-bottom: 100px;
+            width: 350px;
+            h1{
+                text-align: center;
+                font-size: $h1fontsize;
+            }
+            .touzitu_pic{
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+        /*ゲスト*/
+        .guest_wrap{
+            width: 100%;
+            .guest_flex{
+                width: 300px;
+                display: inline;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+                margin: 0 auto;
+                padding: 0;
+            }
+            .guest1, .guest2, .guest3{
+                width: 300px;
+                margin: 0 auto;
+            }
+            img{
+                width: 300px;
+                margin: 0 auto;
             }
         }
         /*概要*/

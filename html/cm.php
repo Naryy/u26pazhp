@@ -28,13 +28,12 @@ try{
 <div class="header">
     <nav class="nav_pc">
         <ul>
-                <li><a href="./index.html">TOP</a></li>
-                <li><a href="./news.php">NEWS</a></li>
-                <li><a href="./cm.php">CM</a></li>
-                <li><a href="./product.php">AEON商品</a></li>
-                <li><a href="https://afshal.jp/" target="_brank">ランディングページ</a></li>
-                <li><a href="https://twitter.com/AFS_HAL" target="_brank">Twitter</a></li>
-                <li><a href="https://www.youtube.com/channel/UCPEZdHwxxmCB0IEiOUZ5Eug" target="_brank">YouTube</a></li>
+            <li><a href="./index.html">TOP</a></li>
+            <li><a href="./news.php">NEWS</a></li>
+            <li><a href="./cm.php">学生制作CM</a></li>
+            <li><a href="./product.php">企業商品紹介</a></li>
+            <li><a href="https://twitter.com/AFS_HAL" target="_brank"><img src="./img/TwitterLogo.png" alt="Twitter" class="navimg"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCPEZdHwxxmCB0IEiOUZ5Eug" target="_brank"><img src="./img/YouTubeLogo.png" alt="YouTube" class="navimg"></a></li>
         </ul>
     </nav>
 </div>
